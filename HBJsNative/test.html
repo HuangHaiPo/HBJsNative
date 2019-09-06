@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>js和原生的交互</title>
+    </head>
+    <body>
+        
+        <h1>js和原生的交互 调用原生弹框</h1>
+        <button onclick="jsCallNativeMethod()" style="border: 1px solid black">通过拦截URL弹原生弹框</button>
+        
+        <button onclick="jscCallNativeMethod()" style="border: 1px solid black">通过JavaScriptCore实现JS原生交互</button>
+        
+        <button onclick="jseCallNativeMethod()" style="border: 1px solid black">通过JSExport协议实现JS原生交互</button>
+
+    </body>
+</html>
+<script>
+    function jsCallNativeMethod() {
+        //可以传参数拼在后面就行
+        //location.href = "js_native://alert";
+        window.webkit.messageHandlers.jsCallNativeMethod.postMessage('我的参数');
+
+    }
+    //原生回调js方法
+    function jsCallBackNativeMethod(arguments) {
+        alert('原生调用js方法 传来的参数 = ' + arguments);
+    }
+
+    function jscCallNativeMethod() {
+        nativeAlert('我是传来的参数1', '我是传来的参数2');
+    }
+    function jseCallNativeMethod() {
+        jsTool.jsCallNativeMethod();//要和工具类定义的方法一样
+    }
+    // 原生的回调方法 可以接收原生传来的参数
+    function nativeCallbackJscMothod(arguments) {
+        alert('原生调用js方法 传来的参数 = ' + arguments);
+    }
+</script>

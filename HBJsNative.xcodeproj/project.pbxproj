@@ -15,6 +15,8 @@
 		E37C71E12321FBE400565D34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E37C71E02321FBE400565D34 /* main.m */; };
 		E37C71EB2321FBE400565D34 /* HBJsNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E37C71EA2321FBE400565D34 /* HBJsNativeTests.m */; };
 		E37C71F62321FBE400565D34 /* HBJsNativeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E37C71F52321FBE400565D34 /* HBJsNativeUITests.m */; };
+		E37C72042321FC5B00565D34 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = E37C72032321FC5B00565D34 /* test.html */; };
+		E37C720723220C2300565D34 /* JSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E37C720623220C2300565D34 /* JSTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		E37C71F12321FBE400565D34 /* HBJsNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBJsNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37C71F52321FBE400565D34 /* HBJsNativeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBJsNativeUITests.m; sourceTree = "<group>"; };
 		E37C71F72321FBE400565D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E37C72032321FC5B00565D34 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		E37C720523220C2300565D34 /* JSTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTool.h; sourceTree = "<group>"; };
+		E37C720623220C2300565D34 /* JSTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		E37C71D02321FBE300565D34 /* HBJsNative */ = {
 			isa = PBXGroup;
 			children = (
+				E37C72032321FC5B00565D34 /* test.html */,
 				E37C71D12321FBE300565D34 /* AppDelegate.h */,
 				E37C71D22321FBE300565D34 /* AppDelegate.m */,
 				E37C71D42321FBE300565D34 /* ViewController.h */,
@@ -110,6 +116,8 @@
 				E37C71DC2321FBE400565D34 /* LaunchScreen.storyboard */,
 				E37C71DF2321FBE400565D34 /* Info.plist */,
 				E37C71E02321FBE400565D34 /* main.m */,
+				E37C720523220C2300565D34 /* JSTool.h */,
+				E37C720623220C2300565D34 /* JSTool.m */,
 			);
 			path = HBJsNative;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37C72042321FC5B00565D34 /* test.html in Resources */,
 				E37C71DE2321FBE400565D34 /* LaunchScreen.storyboard in Resources */,
 				E37C71DB2321FBE400565D34 /* Assets.xcassets in Resources */,
 				E37C71D92321FBE300565D34 /* Main.storyboard in Resources */,
@@ -264,6 +273,7 @@
 			files = (
 				E37C71D62321FBE300565D34 /* ViewController.m in Sources */,
 				E37C71E12321FBE400565D34 /* main.m in Sources */,
+				E37C720723220C2300565D34 /* JSTool.m in Sources */,
 				E37C71D32321FBE300565D34 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3G7567DKL;
 				INFOPLIST_FILE = HBJsNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3G7567DKL;
 				INFOPLIST_FILE = HBJsNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
